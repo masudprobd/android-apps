@@ -2,11 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous" />
-    
-    
-    
+  
     <link rel="stylesheet" href="metro_rail/mrt_pass/kongshomjbold"> 
     <style>
 .button {
@@ -31,52 +27,34 @@
 
 
 
-
-
-            @import url("//fonts.googleapis.com/css?family=Pacifico");
-            @import url("//fonts.googleapis.com/css?family=Roboto:700&");
-            @import url("//fonts.googleapis.com/css?family=Kaushan+Script");
-
             body, html {
                 height: 100%;
                 color: #ffffff;
                 background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
             }
 
-            .app-data {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding-bottom: 20px;
-            }
+       
 
             .app-data h3 {
                 font: 3em/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
-                text-align: center;
-                height: 100%;
+                text-align: center;             
                 width: 100%;
                 color: whitesmoke;
-                letter-spacing: -2px;
-                text-shadow: 4px 0 10px rgba(0, 0, 0, 0.13);
+              
+    
             }
 
             .no-data {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translateX(-50%) translateY(-50%);
+                position: absolute;                     
                 text-align: center;
-                width: 85%;
+             
             }
 
-            .no-data h2 {
-                font-size: 4em;
+            .no-data h2 {               
                 color: #F5CB5C;
                 text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                 0px 8px 13px rgba(0,0,0,0.1),
                 0px 18px 23px rgba(0,0,0,0.1);
-                padding-top: 20px;
-                font: 3em/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
             }
 
             .no-data div {
@@ -84,48 +62,6 @@
                 font-size: 2em;
             }
 
-            .bg {
-                height: 100%;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                overflow: hidden;
-                position: relative;
-            }
-
-            .slide {
-                text-align: center;
-                line-height: normal;
-                height: 100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .slide .info {
-                padding: 10px;
-                text-transform: capitalize;
-                font-family: monospace;
-                font-size: 20px;
-                position: fixed;
-                top: 10px;
-                left: 10px;
-            }
-
-            .videoWrapper {
-                position: relative;
-                padding-bottom: 56.25%;
-                padding-top: 25px;
-                height: 0;
-            }
-
-            .videoWrapper iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
 
             .provider {
                 position: fixed;
@@ -134,102 +70,16 @@
                 font-size: 20px;
                 opacity: 0.5;
             }
-
-            body.lower-third {
-                background: #008000 !important;
-                color: #ffffff !important;
-            }
-
-            .lower-third .slide {
-                height: auto;
-                position: absolute;
-                left: 50%;
-                bottom: 20px;
-                width: 100vw;
-                transform: translateX(-50%);
-                background: rgba(0, 0, 0, 0.7);
-                text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-            }
-
-            .lower-third .provider, .lower-third .info {
-                display: none !important;
-            }
-
-            /* Tamil Fonts */
-        .baloo-thambi-2 { font-family: 'Baloo Thambi 2', cursive; }
-        .catamaran { font-family: 'Catamaran', sans-serif; }
-        .hind-madurai { font-family: 'Hind Madurai', sans-serif; }
-        .arima-madurai { font-family: 'Arima Madurai', cursive; }
-        .mukta-malar { font-family: 'Mukta Malar', sans-serif; }
-        .pavanam { font-family: 'Pavanam', sans-serif; }
-        .baloo-thambi { font-family: 'Baloo Thambi', cursive; }
-        .coiny { font-family: 'Coiny', cursive; }
-        .meera-inimai { font-family: 'Meera Inimai', sans-serif; }
-        .kavivanar { font-family: 'Kavivanar', cursive; }
-
-        /* Telugu Fonts */
-        .hind-guntur { font-family: 'Hind Guntur', sans-serif; }
-        .ramabhadra { font-family: 'Ramabhadra', sans-serif; }
-        .baloo-tammudu-2 { font-family: 'Baloo Tammudu 2', cursive; }
-        .mallanna { font-family: 'Mallanna', sans-serif; }
-        .suranna { font-family: 'Suranna', serif; }
-        .gurajada { font-family: 'Gurajada', serif; }
-        .ntr { font-family: 'NTR', sans-serif; }
-        .mandali { font-family: 'Mandali', sans-serif; }
-        .timmana { font-family: 'Timmana', sans-serif; }
-        .chathura { font-family: 'Chathura', sans-serif; }
-        .sree-krushnadevaraya { font-family: 'Sree Krushnadevaraya', serif; }
-        .ramaraja { font-family: 'Ramaraja', serif; }
-        .lakki-reddy { font-family: 'Lakki Reddy', cursive; }
-        .ravi-prakash { font-family: 'Ravi Prakash', cursive; }
-        .peddana { font-family: 'Peddana', serif; }
-        .tenali-ramakrishna { font-family: 'Tenali Ramakrishna', sans-serif; }
-        .gidugu { font-family: 'Gidugu', sans-serif; }
-        .suravaram { font-family: 'Suravaram', serif; }
-        .dhurjati { font-family: 'Dhurjati', sans-serif; }
-
-        /* Hindi Fonts */
-        .arya { font-family: 'Arya', sans-serif; }
-        .biryani { font-family: 'Biryani', sans-serif; }
-        .palanquin { font-family: 'Palanquin', sans-serif; }
-        .baloo-2 { font-family: 'Baloo 2', sans-serif; }
-        .khand { font-family: 'Khand', sans-serif; }
-        .rajdhani { font-family: 'Rajdhani', sans-serif; }
-        .teko { font-family: 'Teko', sans-serif; }
-        .mukta { font-family: 'Mukta', sans-serif; }
-        .noto-sans { font-family: 'Noto Sans', sans-serif; }
-        .poppins { font-family: 'Poppins', sans-serif; }
-
-        /* Malayalam Fonts */
-        .baloo-chettan-2 { font-family: 'Baloo Chettan 2', sans-serif; }
-        .chilanka { font-family: 'Chilanka', sans-serif; }
-        .gayathri { font-family: 'Gayathri', sans-serif; }
-        .manjari { font-family: 'Manjari', sans-serif; }
-
-        /* English Fonts */
-        .abel { font-family: 'Abel', sans-serif; }
-        .aclonica { font-family: 'Aclonica', sans-serif; }
-        .do-hyeon { font-family: 'Do Hyeon', sans-serif; }
-        .maven-pro { font-family: 'Maven Pro', sans-serif; }
-        .montserrat-alternates { font-family: 'Montserrat Alternates', sans-serif; }
-        .padauk { font-family: 'Padauk', sans-serif; }
-        .play { font-family: 'Play', sans-serif; }
-        .raleway { font-family: 'Raleway', sans-serif; }
-        .sansita-swashed { font-family: 'Sansita Swashed', cursive; }
-        .zcool-xiao-wei { font-family: 'ZCOOL XiaoWei', serif; }
-
         </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
+ 
 </head>
+
 <body>
     <div class="provider">@Metro Rail BD</div>
     <div id="container" class="bg">
         <div class="no-data">
-            <div class="app-data"><h3> MRT Pass  </h3></div><br/>
-
-            <h2> Registration Form </h2>              
-            <br/> <br/>
+            <div class="app-data"><h3> MRT Pass  </h3></div>
+            <h2> Registration Form </h2>        
             <p>  MRT Pass ক্রয়ের জন্য ডিএমটিএসল এর প্রদত্ত রেজিষ্ট্রেশন ফরম পূরণ কাউন্টারে জমা দিতে হবে এব এমআরটি পাস নিবন্ধন ফরম PDF ডাউনলোড করুন </p>
             <br/>
             <a href="metro_rail/mrt_pass/MRT_Pass_Registration_Form.pdf"></a><button class="button button1"> Download </button></a>
@@ -237,82 +87,6 @@
 
         </div>
     </div>
-    <script type="text/javascript">
-
-            var container = $('#container');
-            var normalInterval = 2000;
-            var lowerThirdInterval = 2000;
-
-            function listen() {
-                $.ajax({
-                    type: 'GET',
-                    url: 'song',
-                    dataType: 'json',
-                    success: function(data) {
-                        construct(data);
-                    }
-                });
-                //setTimeout(listen, normalInterval);
-            };
-
-            function construct(data) {
-                //setTimeout(listen, data.isLowerThird ? lowerThirdInterval : normalInterval);
-
-                if (data.settings.isLowerThird) {
-                    $(document.body).addClass('lower-third');
-                }
-
-                container.text("");
-
-                var stanza = decodeURI(data.stanza).replace(/\n/g, '<br>').replace(/%2C/g, ',').replace(/\+/g, ' ').replace(/%3B/g, ';').replace(/%3F/g, '?').replace(/%2F/g, '/');
-                var el = $('<div>').addClass('slide').addClass('apply-font-size').html(stanza);
-                var info = $('<div class="info">' + data.info + '</div>');
-                el.append(info);
-                container.append(el);
-
-                applySettings(data.settings);
-            };
-
-            function applySettings(settings) {
-                switch (settings.theme) {
-                    case 'Light':
-                        jQuery(document.body).css('background', 'radial-gradient( circle , #dedede, white)').css('color', '#000000');
-                        break;
-                    case 'Dark':
-                        jQuery(document.body).css('background', 'radial-gradient( circle , #222, black)').css('color', '#ffffff');
-                        break;
-                    case 'Custom':
-                        jQuery(document.body).css('background', settings.bg).css('color', settings.fg);
-                        break;
-                    default:
-                        jQuery(document.body).css('background', 'radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000000)').css('color', '#ffffff');
-                }
-
-                var fontEl = document.getElementById('font');
-                if (fontEl) {
-                    fontEl.remove();
-                }
-                if (settings.font !== 'Default') {
-                    jQuery(document.head).append(jQuery('<link rel="preconnect" href="https://fonts.gstatic.com"><link id="font" href="https://fonts.googleapis.com/css2?family=' + settings.font.split(' ').join('+') + '&display=swap">'));
-                    setTimeout(function() {
-                        jQuery('#container').attr('class', 'bg ' + settings.font.split(' ').join('-').toLowerCase());
-                    }, 1000);
-                }
-
-                var fontSizeEl = document.getElementById('fontStyle');
-                if (fontSizeEl) {
-                    fontSizeEl.remove();
-                }
-                var computedFontSize = settings.fontSize * 2;
-                jQuery(document.head).append(jQuery(`<style id="fontStyle">.apply-font-size {font-size: ${computedFontSize}px;}</style>`));
-                if (settings.fontBold) {
-                    jQuery('#container .slide').addClass('font-bold');
-                }
-            };
-
-            //setTimeout(listen, normalInterval);
-            var timer = setInterval(listen, normalInterval);
-
-        </script>
+    
 </body>
 </html>
