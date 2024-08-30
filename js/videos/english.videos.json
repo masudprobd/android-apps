@@ -3,7 +3,7 @@
     "category_list": [
       {
         "category_name": "A",
-        "categoryImg": "https://cdn-icons-png.flaticon.com/128/260/260446.png",
+        "categoryImg": "",
         "videos": [
           {
             "video_id": "#",
@@ -30,7 +30,7 @@
 
       {
         "category_name": "B",
-        "categoryImg": "https://cdn-icons-png.flaticon.com/128/260/260446.png",
+        "categoryImg": "",
         "videos": [
           {
             "video_id": "#",
